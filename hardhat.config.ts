@@ -13,7 +13,7 @@ import { HardhatRuntimeEnvironment } from 'hardhat/types';
 
 import path from 'path';
 import { existsSync, readdirSync, readFileSync, statSync } from 'fs';
-
+import dotenv from 'dotenv';
 import { checkArtifact, extractArtifact } from './src/artifact';
 import test from './src/test';
 import Task, { TaskMode, TaskStatus } from './src/task';
@@ -35,6 +35,7 @@ import {
   withRetries,
 } from './src/network';
 
+dotenv.config();
 const THEGRAPHURLS: { [key: string]: string } = {};
 
 task('deploy', 'Run deployment task')
@@ -402,7 +403,32 @@ task(
 
 task(TASK_TEST).addOptionalParam('id', 'Specific task ID of the fork test to run.').setAction(test);
 
+const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const TEST_PRIVATE_KEY = process.env.TEST_PRIVATE_KEY;
+
 export default {
+  networks: {
+    celo: {
+      url: 'https://rpc.ankr.com/celo',
+      chainId: 42220,
+      accounts: [PRIVATE_KEY],
+      urls: {
+        apiURL: 'https://api.celoscan.com/api',
+        browserURL: 'https://celoscan.com/',
+      },
+      verificationAPIKey: process.env.CELO_API_KEY,
+    },
+    celoAlfajores: {
+      url: 'https://alfajores-forno.celo-testnet.org',
+      chainId: 44787,
+      accounts: [TEST_PRIVATE_KEY],
+      urls: {
+        apiURL: 'https://api-alfajores.celoscan.io/api',
+        browserURL: 'https://alfajores.celoscan.com/',
+      },
+      verificationAPIKey: process.env.CELO_API_KEY,
+    },
+  },
   mocha: {
     timeout: 600000,
   },
