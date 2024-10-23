@@ -25,6 +25,15 @@
     ],
     "status": "ACTIVE"
   },
+  "20220325-authorizer-adaptor": {
+    "contracts": [
+      {
+        "name": "AuthorizerAdaptor",
+        "address": "0x5DD21350CEAd23580bf5db1291B4AC73519F5716"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20220325-test-balancer-token": {
     "contracts": [
       {
@@ -52,6 +61,15 @@
     ],
     "status": "ACTIVE"
   },
+  "20221124-authorizer-adaptor-entrypoint": {
+    "contracts": [
+      {
+        "name": "AuthorizerAdaptorEntrypoint",
+        "address": "0x691A59EC0b7d588efC1Cd913aE1426b565d58Ea8"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20230320-weighted-pool-v4": {
     "contracts": [
       {
@@ -61,6 +79,15 @@
       {
         "name": "MockWeightedPool",
         "address": "0xDA4AcdF718A5661FaD49b0d8d0149FDFC8C0c76b"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230414-authorizer-wrapper": {
+    "contracts": [
+      {
+        "name": "AuthorizerWithAdaptorValidation",
+        "address": "0x01b19EAA6F1961377CE7d38c852F1992ba47435c"
       }
     ],
     "status": "ACTIVE"
