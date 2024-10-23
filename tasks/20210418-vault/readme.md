@@ -6,19 +6,11 @@ Note that the Authorizer used in the Vault's original deployment may change over
 
 Aditionally, the `WETH` argument may represent different things in different network: on Ethereum mainnet it is the [`WETH` contract](https://etherscan.io/address/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2), whereas e.g. in Polygon mainnet it is the [`WMATIC` contract](https://polygonscan.com/address/0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270).
 
+## Updated ProtocolFeesCollector
+
+This version of the Vault includes an updated ProtocolFeesCollector that allows for a maximum of 100% protocol swap fees, increased from the previous 50% limit.
+
 ## Useful Files
 
-- [Ethereum mainnet addresses](./output/mainnet.json)
-- [Polygon mainnet addresses](./output/polygon.json)
-- [Arbitrum mainnet addresses](./output/arbitrum.json)
-- [Optimism mainnet addresses](./output/optimism.json)
-- [BSC mainnet addresses](./output/bsc.json)
-- [Gnosis mainnet addresses](./output/gnosis.json)
-- [Avalanche mainnet addresses](./output/avalanche.json)
-- [Polygon zkeVM mainnet addresses](./output/zkevm.json)
-- [Base mainnet addresses](./output/base.json)
-- [Fraxtal mainnet addresses](./output/fraxtal.json)
-- [Mode mainnet addresses](./output/mode.json)
-- [Sepolia testnet addresses](./output/sepolia.json)
 - [`Vault` artifact](./artifact/Vault.json)
 - [`BalancerHelpers` artifact](./artifact/BalancerHelpers.json)

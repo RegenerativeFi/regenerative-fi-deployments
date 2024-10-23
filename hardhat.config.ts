@@ -53,6 +53,62 @@ task('deploy', 'Run deployment task')
     }
   );
 
+task('deploy-core', 'Run deployment task')
+  .addFlag('sourcify', 'Verify contract on Sourcify')
+  .addFlag('force', 'Ignore previous deployments')
+  .addOptionalParam('key', 'Etherscan API key to verify contracts')
+  .setAction(
+    async (
+      args: { force?: boolean; key?: string; verbose?: boolean; sourcify?: boolean },
+      hre: HardhatRuntimeEnvironment
+    ) => {
+      Logger.setDefaults(false, args.verbose || false);
+
+      const apiKey = args.key ?? (hre.config.networks[hre.network.name] as any).verificationAPIKey;
+      const verifier = apiKey ? new Verifier(hre.network, apiKey) : undefined;
+      //Deploy Authorizer
+      await new Task('20210418-authorizer', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      //Deploy Vault
+      await new Task('20210418-vault', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      //Deploy ProtocolFeePercentagesProvider
+      await new Task('20220725-protocol-fee-percentages-provider', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // Deploy WeightedPoolFactory
+      await new Task('20230320-weighted-pool-v4', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      //Deploy ComposableStablePoolFactory
+      await new Task('20240223-composable-stable-pool-v6', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      //Deploy BatchRelayer
+      await new Task('20231031-batch-relayer-v6', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      //Deploy BalancerQueries
+      await new Task('20220721-balancer-queries', TaskMode.LIVE, hre.network.name, verifier).run(args);
+    }
+  );
+
+task('deploy-auth', 'Run deployment task')
+  .addFlag('sourcify', 'Verify contract on Sourcify')
+  .addFlag('force', 'Ignore previous deployments')
+  .addOptionalParam('key', 'Etherscan API key to verify contracts')
+  .setAction(
+    async (
+      args: { force?: boolean; key?: string; verbose?: boolean; sourcify?: boolean },
+      hre: HardhatRuntimeEnvironment
+    ) => {
+      Logger.setDefaults(false, args.verbose || false);
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const apiKey = args.key ?? (hre.config.networks[hre.network.name] as any).verificationAPIKey;
+      const verifier = apiKey ? new Verifier(hre.network, apiKey) : undefined;
+
+      //Deploy Authorizer Adapter
+      await new Task('20220325-authorizer-adaptor', TaskMode.LIVE, hre.network.name, verifier).run(args);
+
+      // Deploy Authorizer Adapter Entrypoint
+      await new Task('20221124-authorizer-adaptor-entrypoint', TaskMode.LIVE, hre.network.name, verifier).run(args);
+
+      // Deploy Authorizer Wrapper
+      await new Task('20230414-authorizer-wrapper', TaskMode.LIVE, hre.network.name, verifier).run(args);
+    }
+  );
+
 task('verify-contract', `Verify a task's deployment on a block explorer`)
   .addParam('id', 'Deployment task ID')
   .addParam('name', 'Contract name')
@@ -405,6 +461,7 @@ task(TASK_TEST).addOptionalParam('id', 'Specific task ID of the fork test to run
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const TEST_PRIVATE_KEY = process.env.TEST_PRIVATE_KEY;
+const CELOSCAN_API_KEY = process.env.CELOSCAN_API_KEY;
 
 export default {
   networks: {
@@ -416,7 +473,7 @@ export default {
         apiURL: 'https://api.celoscan.com/api',
         browserURL: 'https://celoscan.com/',
       },
-      verificationAPIKey: process.env.CELO_API_KEY,
+      verificationAPIKey: CELOSCAN_API_KEY as string,
     },
     celoAlfajores: {
       url: 'https://alfajores-forno.celo-testnet.org',
@@ -426,7 +483,7 @@ export default {
         apiURL: 'https://api-alfajores.celoscan.io/api',
         browserURL: 'https://alfajores.celoscan.com/',
       },
-      verificationAPIKey: process.env.CELO_API_KEY,
+      verificationAPIKey: CELOSCAN_API_KEY as string,
     },
   },
   mocha: {
@@ -457,6 +514,14 @@ export default {
   },
   etherscan: {
     customChains: [
+      {
+        network: 'celo',
+        chainId: 42220,
+        urls: {
+          apiURL: 'https://api.celoscan.io/api',
+          browserURL: 'https://celoscan.io/',
+        },
+      },
       {
         network: 'zkemv',
         chainId: 1101,

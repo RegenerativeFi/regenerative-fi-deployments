@@ -29,6 +29,11 @@ export default {
     BalancerMinter,
     CanCallUserCheckpoint: false,
   },
+  celo: {
+    wstETH: ZERO_ADDRESS,
+    BalancerMinter: ZERO_ADDRESS,
+    CanCallUserCheckpoint: false,
+  },
   sepolia: {
     wstETH: ZERO_ADDRESS,
     BalancerMinter,

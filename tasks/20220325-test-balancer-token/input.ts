@@ -9,4 +9,7 @@ export default {
   base: {
     Admin: '0xC40DCFB13651e64C8551007aa57F9260827B6462',
   },
+  celo: {
+    Admin: '0x7101F583d09fe772bD9F8C45b05B5F595A49aC62',
+  },
 };

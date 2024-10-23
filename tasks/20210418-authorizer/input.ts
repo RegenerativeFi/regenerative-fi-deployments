@@ -39,4 +39,7 @@ export default {
   mode: {
     admin: '0x4f22C2784Cbd2B24a172566491Ee73fee1A63c2e',
   },
+  celo: {
+    admin: '0x7101F583d09fe772bD9F8C45b05B5F595A49aC62',
+  },
 };
