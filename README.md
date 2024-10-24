@@ -1,4 +1,4 @@
-# <img src="logo.svg" alt="Regenerative Finance" height="128px">
+# <img src="logo.avif" alt="Regenerative Finance" height="128px">
 
 # Regenerative Finance V2 Deployments
 
