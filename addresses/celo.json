@@ -92,6 +92,15 @@
     ],
     "status": "ACTIVE"
   },
+  "20230613-balancer-pool-data-queries": {
+    "contracts": [
+      {
+        "name": "BalancerPoolDataQueries",
+        "address": "0x9A3a52f4462585c31025e2242C9b4074a9FB4a1f"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20231031-batch-relayer-v6": {
     "contracts": [
       {

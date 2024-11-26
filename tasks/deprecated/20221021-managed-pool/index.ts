@@ -8,7 +8,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
   const circuitBreakerLib = await task.deployAndVerify('CircuitBreakerLib', [], from, force);
 
   const args = [input.Vault, input.ProtocolFeePercentagesProvider];
-  const factory = await task.deployAndVerify('ManagedPoolFactory', args, from, force, {
+  const factory = await task.deployAndVerify('ManagedPoolFactory', args, from, force, undefined, {
     CircuitBreakerLib: circuitBreakerLib.address,
     ManagedPoolAddRemoveTokenLib: addRemoveTokenLib.address,
   });

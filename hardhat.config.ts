@@ -67,19 +67,21 @@ task('deploy-core', 'Run deployment task')
       const apiKey = args.key ?? (hre.config.networks[hre.network.name] as any).verificationAPIKey;
       const verifier = apiKey ? new Verifier(hre.network, apiKey) : undefined;
       //Deploy Authorizer
-      await new Task('20210418-authorizer', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // await new Task('20210418-authorizer', TaskMode.LIVE, hre.network.name, verifier).run(args);
       //Deploy Vault
       await new Task('20210418-vault', TaskMode.LIVE, hre.network.name, verifier).run(args);
-      //Deploy ProtocolFeePercentagesProvider
-      await new Task('20220725-protocol-fee-percentages-provider', TaskMode.LIVE, hre.network.name, verifier).run(args);
-      // Deploy WeightedPoolFactory
-      await new Task('20230320-weighted-pool-v4', TaskMode.LIVE, hre.network.name, verifier).run(args);
-      //Deploy ComposableStablePoolFactory
-      await new Task('20240223-composable-stable-pool-v6', TaskMode.LIVE, hre.network.name, verifier).run(args);
-      //Deploy BatchRelayer
-      await new Task('20231031-batch-relayer-v6', TaskMode.LIVE, hre.network.name, verifier).run(args);
-      //Deploy BalancerQueries
-      await new Task('20220721-balancer-queries', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // //Deploy BalancerPoolDataQueries
+      // await new Task('20230613-balancer-pool-data-queries', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // //Deploy ProtocolFeePercentagesProvider
+      // await new Task('20220725-protocol-fee-percentages-provider', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // // Deploy WeightedPoolFactory
+      // await new Task('20230320-weighted-pool-v4', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // //Deploy ComposableStablePoolFactory
+      // await new Task('20240223-composable-stable-pool-v6', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // //Deploy BatchRelayer
+      // await new Task('20231031-batch-relayer-v6', TaskMode.LIVE, hre.network.name, verifier).run(args);
+      // //Deploy BalancerQueries
+      // await new Task('20220721-balancer-queries', TaskMode.LIVE, hre.network.name, verifier).run(args);
     }
   );
 
@@ -471,17 +473,17 @@ export default {
       accounts: [PRIVATE_KEY],
       urls: {
         apiURL: 'https://api.celoscan.com/api',
-        browserURL: 'https://celoscan.com/',
+        browserURL: 'https://celoscan.io/',
       },
       verificationAPIKey: CELOSCAN_API_KEY as string,
     },
     celoAlfajores: {
       url: 'https://alfajores-forno.celo-testnet.org',
       chainId: 44787,
-      accounts: [TEST_PRIVATE_KEY],
+      accounts: [PRIVATE_KEY],
       urls: {
         apiURL: 'https://api-alfajores.celoscan.io/api',
-        browserURL: 'https://alfajores.celoscan.com/',
+        browserURL: 'https://alfajores.celoscan.io/',
       },
       verificationAPIKey: CELOSCAN_API_KEY as string,
     },
@@ -520,6 +522,14 @@ export default {
         urls: {
           apiURL: 'https://api.celoscan.io/api',
           browserURL: 'https://celoscan.io/',
+        },
+      },
+      {
+        network: 'celoAlfajores',
+        chainId: 44787,
+        urls: {
+          apiURL: 'https://api-alfajores.celoscan.io/api',
+          browserURL: 'https://alfajores.celoscan.com/',
         },
       },
       {

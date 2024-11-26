@@ -1,0 +1,160 @@
+{
+  "20210418-authorizer": {
+    "contracts": [
+      {
+        "name": "Authorizer",
+        "address": "0xE7AC165189739Cc0058279bE562cf5e8DD8d095f"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20210418-vault": {
+    "contracts": [
+      {
+        "name": "Vault",
+        "address": "0xeA280B39437a64473a0C77949759E6629eD1Dc73"
+      },
+      {
+        "name": "ProtocolFeesCollector",
+        "address": "0x5D32d73AD1C2e5B776d06B6348b23462eB6CA4a9"
+      },
+      {
+        "name": "BalancerHelpers",
+        "address": "0xd5B6872D0A47b8F7f4bf115894BF7490F1913830"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20220325-authorizer-adaptor": {
+    "contracts": [
+      {
+        "name": "AuthorizerAdaptor",
+        "address": "0x691A59EC0b7d588efC1Cd913aE1426b565d58Ea8"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20220325-test-balancer-token": {
+    "contracts": [
+      {
+        "name": "TestBalancerToken",
+        "address": "0x68DF333c5F5835A186AA8bCe4a704432006fDF49"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20220721-balancer-queries": {
+    "contracts": [
+      {
+        "name": "BalancerQueries",
+        "address": "0x5DD21350CEAd23580bf5db1291B4AC73519F5716"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20220725-protocol-fee-percentages-provider": {
+    "contracts": [
+      {
+        "name": "ProtocolFeePercentagesProvider",
+        "address": "0xdbd173227b8C07dC46Eb2a38F937B690159Cb40f"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20221124-authorizer-adaptor-entrypoint": {
+    "contracts": [
+      {
+        "name": "AuthorizerAdaptorEntrypoint",
+        "address": "0x01b19EAA6F1961377CE7d38c852F1992ba47435c"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230320-weighted-pool-v4": {
+    "contracts": [
+      {
+        "name": "WeightedPoolFactory",
+        "address": "0x1051Ec689f101D36271325347c21614eDF03e102"
+      },
+      {
+        "name": "MockWeightedPool",
+        "address": "0xD1077C026C4Da281Fac466161811e82aCFC4703a"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230414-authorizer-wrapper": {
+    "contracts": [
+      {
+        "name": "AuthorizerWithAdaptorValidation",
+        "address": "0xaac7B545e4725221A637B09367CEBe3AB258b962"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230613-balancer-pool-data-queries": {
+    "contracts": [
+      {
+        "name": "BalancerPoolDataQueries",
+        "address": "0x4759f093b14438BFDd583717410e3cA164E81b2b"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20231031-batch-relayer-v6": {
+    "contracts": [
+      {
+        "name": "BatchRelayerLibrary",
+        "address": "0x9E49cF316C976EE0E776f09730130A900801E371"
+      },
+      {
+        "name": "BatchRelayerQueryLibrary",
+        "address": "0xACf0D80f8732E54614516D39BFe932cB322B5fa1"
+      },
+      {
+        "name": "BalancerRelayer",
+        "address": "0x2eDd832CA83781bbf9B7091CCf7a8748B22eC91b"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20240223-composable-stable-pool-v6": {
+    "contracts": [
+      {
+        "name": "ComposableStablePoolFactory",
+        "address": "0xBFb9F49E468eB87F2FE22F8062C57E34c57A278C"
+      },
+      {
+        "name": "MockComposableStablePool",
+        "address": "0x4Be0f63AEb3BEF2a20e20d7fa0A408e2fC27A3fa"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241125-regenerative-test-tokens": {
+    "contracts": [
+      {
+        "name": "tCELO",
+        "address": "0xE036290F41c367AeC59aec5B69C2B72068C441f6"
+      },
+      {
+        "name": "tcUSD",
+        "address": "0x51f29e07c7cf53D2603e1A224E27b1c74E181a17"
+      },
+      {
+        "name": "tUSDC",
+        "address": "0x9A3a52f4462585c31025e2242C9b4074a9FB4a1f"
+      }
+    ],
+    "status": "SCRIPT"
+  },
+  "20241125-regenerative-voting-escrow": {
+    "contracts": [
+      {
+        "name": "VotingEscrow",
+        "address": "0xEBC4Bb8727FEa1f81a007E877A6e0b874a285255"
+      }
+    ],
+    "status": "ACTIVE"
+  }
+}

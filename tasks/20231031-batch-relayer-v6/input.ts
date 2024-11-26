@@ -34,6 +34,11 @@ export default {
     BalancerMinter: ZERO_ADDRESS,
     CanCallUserCheckpoint: false,
   },
+  celoAlfajores: {
+    wstETH: ZERO_ADDRESS,
+    BalancerMinter: ZERO_ADDRESS,
+    CanCallUserCheckpoint: false,
+  },
   sepolia: {
     wstETH: ZERO_ADDRESS,
     BalancerMinter,

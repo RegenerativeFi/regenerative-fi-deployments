@@ -12,7 +12,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
   const addRemoveTokenLib = await task.deployAndVerify('ManagedPoolAddRemoveTokenLib', [], from, force);
   const circuitBreakerLib = await task.deployAndVerify('CircuitBreakerLib', [], from, force);
   const libs = { CircuitBreakerLib: circuitBreakerLib.address };
-  const ammLib = await task.deployAndVerify('ManagedPoolAmmLib', [], from, force, libs);
+  const ammLib = await task.deployAndVerify('ManagedPoolAmmLib', [], from, force, undefined, libs);
   const math = await task.deployAndVerify('ExternalWeightedMath', [], from, force);
   const recoveryModeHelper = await task.deployAndVerify('RecoveryModeHelper', [input.Vault], from, force);
 
@@ -27,7 +27,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
     input.BufferPeriodDuration,
   ];
 
-  const factory = await task.deployAndVerify('ManagedPoolFactory', args, from, force, {
+  const factory = await task.deployAndVerify('ManagedPoolFactory', args, from, force, undefined, {
     CircuitBreakerLib: circuitBreakerLib.address,
     ManagedPoolAddRemoveTokenLib: addRemoveTokenLib.address,
     ManagedPoolAmmLib: ammLib.address,

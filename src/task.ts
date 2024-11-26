@@ -93,13 +93,14 @@ export default class Task {
     args: Array<Param> = [],
     from?: SignerWithAddress,
     force?: boolean,
+    newName?: string,
     libs?: Libraries
   ): Promise<Contract> {
     if (this.mode == TaskMode.CHECK) {
       return await this.check(name, args, libs);
     }
 
-    const instance = await this.deploy(name, args, from, force, libs);
+    const instance = await this.deploy(name, args, from, force, undefined, libs);
 
     await this.verify(name, instance.address, args, libs);
     return instance;
@@ -110,6 +111,7 @@ export default class Task {
     args: Array<Param> = [],
     from?: SignerWithAddress,
     force?: boolean,
+    newName?: string,
     libs?: Libraries
   ): Promise<Contract> {
     if (this.mode == TaskMode.CHECK) {
@@ -124,7 +126,11 @@ export default class Task {
     const output = this.output({ ensure: false });
     if (force || !output[name]) {
       instance = await deploy(this.artifact(name), args, from, libs);
-      this.save({ [name]: instance });
+      if (newName) {
+        this.save({ [newName]: instance });
+      } else {
+        this.save({ [name]: instance });
+      }
       logger.success(`Deployed ${name} at ${instance.address}`);
 
       if (this.mode === TaskMode.LIVE) {
@@ -147,7 +153,6 @@ export default class Task {
     if (this.mode !== TaskMode.LIVE) {
       return;
     }
-
     try {
       if (!this._verifier) return logger.warn('Skipping contract verification, no verifier defined');
       const url = await this._verifier.call(this, name, address, constructorArguments, libs);

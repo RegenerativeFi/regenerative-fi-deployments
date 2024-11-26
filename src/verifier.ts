@@ -88,7 +88,6 @@ export default class Verifier {
     const buildInfos = await task.buildInfos();
     const buildInfo = this.findBuildInfoWithContract(buildInfos, name);
     buildInfo.input = this.trimmedBuildInfoInput(name, buildInfo.input);
-
     const sourceName = findContractSourceName(buildInfo, name);
     const contractInformation = await extractMatchingContractInformation(sourceName, name, buildInfo, deployedBytecode);
     if (!contractInformation) throw Error('Could not find a bytecode matching the requested contract');

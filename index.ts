@@ -96,7 +96,7 @@ export function getBalancerDeployment(task: string, network: string): { [key: st
  * @param contract Name of the contract to look the path of it's creation code
  */
 function getBalancerContractArtifactPath(task: string, contract: string): string {
-  return `@balancer-labs/v2-deployments/dist/tasks/${task}/artifact/${contract}.json`;
+  return `@regenerative/v2-deployments/dist/tasks/${task}/artifact/${contract}.json`;
 }
 
 /**
@@ -105,7 +105,7 @@ function getBalancerContractArtifactPath(task: string, contract: string): string
  * @param network Name of the network looking the deployment path for (e.g. mainnet, polygon, etc)
  */
 function getBalancerDeploymentPath(task: string, network: string): string {
-  return `@balancer-labs/v2-deployments/dist/tasks/${task}/output/${network}.json`;
+  return `@regenerative/v2-deployments/dist/tasks/${task}/output/${network}.json`;
 }
 
 /**
@@ -113,5 +113,5 @@ function getBalancerDeploymentPath(task: string, network: string): string {
  * @param network Name of the network looking the deployment path for (e.g. mainnet, polygon, etc)
  */
 function getBalancerContractAddresses(network: string): string {
-  return `@balancer-labs/v2-deployments/dist/addresses/${network}.json`;
+  return `@regenerative/v2-deployments/dist/addresses/${network}.json`;
 }
