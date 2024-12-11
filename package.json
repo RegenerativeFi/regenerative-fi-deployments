@@ -1,6 +1,6 @@
 {
   "name": "@regenerative/v2-deployments",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "Addresses and ABIs of all Regenerative deployed contracts",
   "license": "GPL-3.0-only",
   "homepage": "https://github.com/RegenerativeFi/regenerative-deployments/#readme",
@@ -29,7 +29,7 @@
     "check-network-action-ids": "hardhat check-action-ids --network",
     "check-action-ids": "hardhat check-action-ids --network celo",
     "extract-artifacts": "hardhat extract-artifacts",
-    "build-address-lookup": "hardhat build-address-lookup --network celo",
+    "build-address-lookup": "hardhat build-address-lookup --network celo && hardhat build-address-lookup --network celoAlfajores",
     "check-address-lookup": "hardhat check-address-lookup --network celo",
     "build-timelock-authorizer-config": "hardhat build-timelock-authorizer-config --network mainnet && hardhat build-timelock-authorizer-config --network polygon && hardhat build-timelock-authorizer-config --network arbitrum && hardhat build-timelock-authorizer-config --network optimism && hardhat build-timelock-authorizer-config --network gnosis && hardhat build-timelock-authorizer-config --network bsc && hardhat build-timelock-authorizer-config --network avalanche && hardhat build-timelock-authorizer-config --network zkevm && hardhat build-timelock-authorizer-config --network base && hardhat build-timelock-authorizer-config --network fraxtal && hardhat build-timelock-authorizer-config --network mode && hardhat build-timelock-authorizer-config --network sepolia",
     "check-timelock-authorizer-config": "hardhat check-timelock-authorizer-config --network mainnet && hardhat check-timelock-authorizer-config --network polygon && hardhat check-timelock-authorizer-config --network arbitrum && hardhat check-timelock-authorizer-config --network optimism && hardhat check-timelock-authorizer-config --network gnosis && hardhat check-timelock-authorizer-config --network bsc && hardhat check-timelock-authorizer-config --network avalanche && hardhat check-timelock-authorizer-config --network zkevm && hardhat check-timelock-authorizer-config --network base && hardhat check-timelock-authorizer-config --network fraxtal && hardhat check-timelock-authorizer-config --network mode && hardhat check-timelock-authorizer-config --network sepolia",

@@ -130,5 +130,14 @@
       }
     ],
     "status": "ACTIVE"
+  },
+  "20241125-regenerative-test-tokens": {
+    "contracts": [
+      {
+        "name": "TestBalancerToken",
+        "address": "0x68DF333c5F5835A186AA8bCe4a704432006fDF49"
+      }
+    ],
+    "status": "SCRIPT"
   }
 }

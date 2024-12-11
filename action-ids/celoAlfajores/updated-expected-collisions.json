@@ -1,0 +1,170 @@
+{
+  "0xd0e974c13b038c2f550dd32c9ac8ac27f85cd849f2277e4eaf6ad8babb6382d8": [
+    {
+      "taskId": "20210418-vault",
+      "contractName": "BalancerHelpers",
+      "signature": "queryExit(bytes32,address,address,(address[],uint256[],bytes,bool))",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20220721-balancer-queries",
+      "contractName": "BalancerQueries",
+      "signature": "queryExit(bytes32,address,address,(address[],uint256[],bytes,bool))",
+      "useAdaptor": true
+    }
+  ],
+  "0x7d735f71c6aad2575f1d3641c05d0687029343cf688f15d23c48029b88ecf5ad": [
+    {
+      "taskId": "20210418-vault",
+      "contractName": "BalancerHelpers",
+      "signature": "queryJoin(bytes32,address,address,(address[],uint256[],bytes,bool))",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20220721-balancer-queries",
+      "contractName": "BalancerQueries",
+      "signature": "queryJoin(bytes32,address,address,(address[],uint256[],bytes,bool))",
+      "useAdaptor": true
+    }
+  ],
+  "0xc8c6dc88895ac4d11dbe643c5fa8d176c76587d9a8de9c582948ed9a670e879d": [
+    {
+      "taskId": "20210418-authorizer",
+      "contractName": "Authorizer",
+      "signature": "grantRole(bytes32,address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20220325-test-balancer-token",
+      "contractName": "TestBalancerToken",
+      "signature": "grantRole(bytes32,address)",
+      "useAdaptor": true
+    }
+  ],
+  "0x7f7b8f9636b8e03841d9353d5e03da2ee88c893d131e2c198e7479dfb8446a29": [
+    {
+      "taskId": "20210418-authorizer",
+      "contractName": "Authorizer",
+      "signature": "renounceRole(bytes32,address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20220325-test-balancer-token",
+      "contractName": "TestBalancerToken",
+      "signature": "renounceRole(bytes32,address)",
+      "useAdaptor": true
+    }
+  ],
+  "0x3fe5bd0a97e8ca27c94c7c5123c3af24bf0ef13069870bb7972d2c3bf87faedc": [
+    {
+      "taskId": "20210418-authorizer",
+      "contractName": "Authorizer",
+      "signature": "revokeRole(bytes32,address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20220325-test-balancer-token",
+      "contractName": "TestBalancerToken",
+      "signature": "revokeRole(bytes32,address)",
+      "useAdaptor": true
+    }
+  ],
+  "0x1cb07b4aa0b5c179c71a6941757a26cf2893e56f6b2606158bdfbc348e2568d6": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "approveVault(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "approveVault(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xfd0fdce906c37a8ce5503057969d0a688fe6247994e8dd2669b5679e7ed36d2e": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "batchSwap(uint8,(bytes32,uint256,uint256,uint256,bytes)[],address[],(address,bool,address,bool),int256[],uint256,uint256,(uint256,uint256)[])",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "batchSwap(uint8,(bytes32,uint256,uint256,uint256,bytes)[],address[],(address,bool,address,bool),int256[],uint256,uint256,(uint256,uint256)[])",
+      "useAdaptor": true
+    }
+  ],
+  "0xfc298a3ef4a89de4ce8f6ba5fdf9936d4b632712dd0b869cf957e6c6f5535f0f": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "exitPool(bytes32,uint8,address,address,(address[],uint256[],bytes,bool),(uint256,uint256)[])",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "exitPool(bytes32,uint8,address,address,(address[],uint256[],bytes,bool),(uint256,uint256)[])",
+      "useAdaptor": true
+    }
+  ],
+  "0xa35b8c2cb0745df3bc4d70a3d712b2f6b1eb308a4fb64a6bebad7d0c20515cd8": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "joinPool(bytes32,uint8,address,address,(address[],uint256[],bytes,bool),uint256,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "joinPool(bytes32,uint8,address,address,(address[],uint256[],bytes,bool),uint256,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x31e813453516871c83561d4143b8f6e8e9a1021b8e016d8c5a164027cb450764": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "manageUserBalance((uint8,address,uint256,address,address)[],uint256,(uint256,uint256)[])",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "manageUserBalance((uint8,address,uint256,address,address)[],uint256,(uint256,uint256)[])",
+      "useAdaptor": true
+    }
+  ],
+  "0xd50ca84184769c6f7cc93404a337650a97ff13247170b447c4afc012c2ab8edc": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "peekChainedReferenceValue(uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "peekChainedReferenceValue(uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x46e371755ccfc8b8d9ec9cc0a2e28c2cfd1893d3dd3304c3eb3b7c1bf743dc45": [
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerLibrary",
+      "signature": "swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256,uint256,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20231031-batch-relayer-v6",
+      "contractName": "BatchRelayerQueryLibrary",
+      "signature": "swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256,uint256,uint256)",
+      "useAdaptor": true
+    }
+  ]
+}

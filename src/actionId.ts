@@ -52,23 +52,26 @@ export function getTaskActionIds(task: Task): TaskActionIds {
 }
 
 export async function saveActionIds(task: Task, contractName: string, factoryOutput?: string): Promise<void> {
-  logger.log(`Generating action IDs for ${contractName} of ${task.id}`, '');
+  const excludedContracts = ['MockWeightedPool'];
+  if (!excludedContracts.includes(contractName) && task.id !== '00000000-tokens') {
+    logger.log(`Generating action IDs for ${contractName} of ${task.id}`, '');
 
-  const { useAdaptor, actionIds } = await getActionIds(task, contractName, factoryOutput);
+    const { useAdaptor, actionIds } = await getActionIds(task, contractName, factoryOutput);
 
-  const actionIdsDir = path.join(ACTION_ID_DIRECTORY, task.network);
-  if (!fs.existsSync(actionIdsDir)) fs.mkdirSync(actionIdsDir, { recursive: true });
+    const actionIdsDir = path.join(ACTION_ID_DIRECTORY, task.network);
+    if (!fs.existsSync(actionIdsDir)) fs.mkdirSync(actionIdsDir, { recursive: true });
 
-  const filePath = path.join(actionIdsDir, 'action-ids.json');
+    const filePath = path.join(actionIdsDir, 'action-ids.json');
 
-  // Load the existing content if any exists.
-  const newFileContents = safeReadJsonFile<TaskActionIds>(filePath);
+    // Load the existing content if any exists.
+    const newFileContents = safeReadJsonFile<TaskActionIds>(filePath);
 
-  // Write the new entry.
-  newFileContents[task.id] = newFileContents[task.id] ?? {};
-  newFileContents[task.id][contractName] = { useAdaptor, factoryOutput, actionIds };
+    // Write the new entry.
+    newFileContents[task.id] = newFileContents[task.id] ?? {};
+    newFileContents[task.id][contractName] = { useAdaptor, factoryOutput, actionIds };
 
-  fs.writeFileSync(filePath, JSON.stringify(newFileContents, null, 2));
+    fs.writeFileSync(filePath, JSON.stringify(newFileContents, null, 2));
+  }
 }
 
 export async function checkActionIds(task: Task): Promise<void> {

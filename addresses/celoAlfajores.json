@@ -152,7 +152,98 @@
     "contracts": [
       {
         "name": "VotingEscrow",
-        "address": "0xEBC4Bb8727FEa1f81a007E877A6e0b874a285255"
+        "address": "0x56Fa6A4cBED97E2ed4c4d1d272b8375F46970F92"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-mock-regenerative-token-admin": {
+    "contracts": [
+      {
+        "name": "MockBalancerTokenAdmin",
+        "address": "0x63CBAea259d07Dd82040D4c5AFA09F3aC9969931"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-bribe-market": {
+    "contracts": [
+      {
+        "name": "RewardDistributor",
+        "address": "0x7fF1009a4EE63DC20bC539C28eA1a538c66Bd097"
+      },
+      {
+        "name": "BribeVault",
+        "address": "0x32Be53C98c574097f8672827e97F784616631dc3"
+      },
+      {
+        "name": "BribeMarket",
+        "address": "0x9f2DbDb1F89f545d8C8D0cceCb4B527b0E5e5a16"
+      },
+      {
+        "name": "BribeFactory",
+        "address": "0x81DD219858E52313F9f062a14FACeef5674c9e8d"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-gauge-adder-v4": {
+    "contracts": [
+      {
+        "name": "GaugeAdder",
+        "address": "0xe6C8BE531Bef3C0f061d11F05210C2F53Ac1B613"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-gauge-controller": {
+    "contracts": [
+      {
+        "name": "GaugeController",
+        "address": "0x0B58399530a0664C0B1ad7e7d290fFAC854930f8"
+      },
+      {
+        "name": "BalancerMinter",
+        "address": "0x03A9C0cd9722Faa98Db73f944be2dD6B2C230f80"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-rewards-only-gauge-factory": {
+    "contracts": [
+      {
+        "name": "RewardsOnlyGauge",
+        "address": "0xD1531Aa8F91f5Fd8D5D820CD5841e3880283D1Be"
+      },
+      {
+        "name": "ChildChainStreamer",
+        "address": "0xB08Dd0b53abD8fB842cDec75cc5064FDD74e99C7"
+      },
+      {
+        "name": "ChildChainLiquidityGaugeFactory",
+        "address": "0x76C12F93ad8975609f95C13782fd8A0B4135e4c6"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-single-recipient-gauge-factory-v2": {
+    "contracts": [
+      {
+        "name": "SingleRecipientGaugeFactory",
+        "address": "0x3d6ad714d9F9d3963d9DEE5A353713CFF38C4616"
+      },
+      {
+        "name": "SingleRecipientGauge",
+        "address": "0x49CB96d352E53f0Abd94Fdef53f1dd49804Cea92"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-stakeless-gauge-checkpointer-v2": {
+    "contracts": [
+      {
+        "name": "StakelessGaugeCheckpointer",
+        "address": "0x471d434Cd48015d662D575B53712c75ED0Af83E8"
       }
     ],
     "status": "ACTIVE"
