@@ -70,6 +70,15 @@
     ],
     "status": "ACTIVE"
   },
+  "20230316-l2-balancer-pseudo-minter": {
+    "contracts": [
+      {
+        "name": "L2BalancerPseudoMinter",
+        "address": "0x06A465C432207872d521b30Ff8c58b84d26c2f97"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20230320-weighted-pool-v4": {
     "contracts": [
       {
@@ -244,6 +253,28 @@
       {
         "name": "StakelessGaugeCheckpointer",
         "address": "0x471d434Cd48015d662D575B53712c75ED0Af83E8"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241210-regenerative-ve-delegation": {
+    "contracts": [
+      {
+        "name": "VotingEscrowDelegation",
+        "address": "0xF3F9999209FAA8342a90711d1ACbD07a6da28257"
+      },
+      {
+        "name": "VotingEscrowDelegationProxy",
+        "address": "0xE559a94CFA015F6d9BB4C97778222efb42b746B6"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241230-regenerative-gauge-registry": {
+    "contracts": [
+      {
+        "name": "ChildChainGaugeRegistry",
+        "address": "0x15246e19d5B38a11eC81929AFFfF0E0723D9aA41"
       }
     ],
     "status": "ACTIVE"
