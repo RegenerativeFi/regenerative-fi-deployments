@@ -222,5 +222,39 @@
         "toggle_approve_mint(address)": "0xa1817a46aeaea7ea0284c26be11778439014794cec66c04f162b74bebcb58cce"
       }
     }
+  },
+  "20241230-regenerative-gauge-registry": {
+    "ChildChainGaugeRegistry": {
+      "useAdaptor": false,
+      "actionIds": {
+        "addGauge(address)": "0xb72033719a7792414173717bbc2c6c30c3060c884c715566d68c8373ae65d437",
+        "removeGauge(address)": "0xed12b4eecb01496177c608f71aacf08fde36da2987196cd76550548642e64c21"
+      }
+    },
+    "RegenerativeGaugeRegistry": {
+      "useAdaptor": false,
+      "actionIds": {
+        "addGauge(address)": "0xd479ab58de04e401a4b4c9e1b2c184bd639b17b6c1e1e5801961b8b015514a11",
+        "removeGauge(address)": "0x3490ddd00f0b2e46c8809a6142174df11e6263602e63e4b5a331d40061d3f1a1"
+      }
+    }
+  },
+  "20230316-l2-balancer-pseudo-minter": {
+    "L2BalancerPseudoMinter": {
+      "useAdaptor": false,
+      "actionIds": {
+        "addGaugeFactory(address)": "0x03efa5696057fa880a4e64676aee956fde999e16f0fd8a1e53b0c024c4476b1f",
+        "mint(address)": "0x340b7f37631777d2d807f1516151a8764e76d1a9238cab4660845191c6f151de",
+        "mintFor(address,address)": "0x8f535ef8cea264cc8dff9896e4370956322f9aae73460c53c123507e8a656886",
+        "mintMany(address[])": "0x2c102f3ef1938e82010ae686a34c48dc4c84f3741543df02aff481a20a351ca9",
+        "mintManyFor(address[],address)": "0x965e8a0220165decb57613aa8f32772b4bed5df0b242dcceeb132ec01a7f2983",
+        "mint_for(address,address)": "0xecd219732e0459651e112334f76f3570458910921163940c2eefabd8d87230df",
+        "mint_many(address[8])": "0xf6250de0dda10369236d77ef8e09ef098fb186ef99dd268a96720d273128ad41",
+        "removeGaugeFactory(address)": "0x3b0aa9b82eb864cc5a24cfc51b577567ee12d40b782ee0af7f8c21399e0433dc",
+        "setMinterApproval(address,bool)": "0x210e8b12ab8d51e984be47c798fe1c3237316e74b5755062ea42232eaa640cb4",
+        "setMinterApprovalWithSignature(address,bool,address,uint256,uint8,bytes32,bytes32)": "0x27b22b162325a969a9e876c29d2bd6ea6d0a7ee21ddcbacc8f3d6d349f16b680",
+        "toggle_approve_mint(address)": "0x247474e9f94fb138bd0a2792972ffffd2ce4adc13861e0632144afc44220bf5b"
+      }
+    }
   }
 }
