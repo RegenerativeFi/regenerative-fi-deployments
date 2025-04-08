@@ -79,6 +79,15 @@
     ],
     "status": "ACTIVE"
   },
+  "20230316-l2-ve-delegation-proxy": {
+    "contracts": [
+      {
+        "name": "VotingEscrowDelegationProxy",
+        "address": "0x5fab59a8f0791298f5448695FbCB5A2c8C887938"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20230320-weighted-pool-v4": {
     "contracts": [
       {
@@ -179,19 +188,19 @@
     "contracts": [
       {
         "name": "RewardDistributor",
-        "address": "0x7fF1009a4EE63DC20bC539C28eA1a538c66Bd097"
+        "address": "0x60DcBeC73d95ab9E823b0eE7343003df121AA478"
       },
       {
         "name": "BribeVault",
-        "address": "0x32Be53C98c574097f8672827e97F784616631dc3"
+        "address": "0x16A3793F3B62C285B7d5dcb36cc4652FF2a46d2A"
       },
       {
         "name": "BribeMarket",
-        "address": "0x9f2DbDb1F89f545d8C8D0cceCb4B527b0E5e5a16"
+        "address": "0xDfbC5147753e51a44afa94F0B41C50b26faD076F"
       },
       {
         "name": "BribeFactory",
-        "address": "0x81DD219858E52313F9f062a14FACeef5674c9e8d"
+        "address": "0x16e1e5B8baEdea993466532bb86474847002380a"
       }
     ],
     "status": "ACTIVE"
@@ -257,6 +266,23 @@
     ],
     "status": "ACTIVE"
   },
+  "20241209-test-regenerative-gauge-controller": {
+    "contracts": [
+      {
+        "name": "GaugeController",
+        "address": "0x0B58399530a0664C0B1ad7e7d290fFAC854930f8"
+      },
+      {
+        "name": "TestGaugeController",
+        "address": "0x6cd1dcf9f20a484d487665a6d06f6ee5de6db16e"
+      },
+      {
+        "name": "BalancerMinter",
+        "address": "0x03A9C0cd9722Faa98Db73f944be2dD6B2C230f80"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20241210-regenerative-ve-delegation": {
     "contracts": [
       {
@@ -279,6 +305,19 @@
       {
         "name": "RegenerativeGaugeRegistry",
         "address": "0x86Ec87AB1da08a72A57eAFFdb46109058d0BA285"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20250128-no-token-admin-gauge-factory": {
+    "contracts": [
+      {
+        "name": "NoTokenAdminGauge",
+        "address": "0x9D29ef6660d9DC4889fA298bb48d379144F56B63"
+      },
+      {
+        "name": "NoTokenAdminGaugeFactory",
+        "address": "0x1E409712f9cCBE8c6e03d91Dc928486A34061fb5"
       }
     ],
     "status": "ACTIVE"

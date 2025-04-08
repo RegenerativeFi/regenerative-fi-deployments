@@ -166,5 +166,173 @@
       "signature": "swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256,uint256,uint256)",
       "useAdaptor": true
     }
+  ],
+  "0x473f5e8c6e55363720cf6f7fcd979a32d792ba6cdd9b26089a07e27172b7117d": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_gauge(address,int128)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_gauge(address,int128)",
+      "useAdaptor": true
+    }
+  ],
+  "0x2cc706d94202bc96bae2c4e7a7275423580be8794d474a228099c570d9f99c0a": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_gauge(address,int128,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_gauge(address,int128,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xe4a438bf04c315d293789a541d5d4e1394d61c34d7147d63f861735832179f1a": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_type(string)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_type(string)",
+      "useAdaptor": true
+    }
+  ],
+  "0x035276ba41d315e3364d36695193fef3cd6e92b1e8b0f59884fd25476b219a43": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_type(string,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_type(string,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x851dac3b06e5499bf021dc53b0d86a7c621315f9172f1979d786dba7361b85e4": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "change_gauge_weight(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "change_gauge_weight(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x6a58444e44c6968ad60fd04f2675068d0632ef1d96fddc327ac1b05a31b92b85": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "change_type_weight(int128,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "change_type_weight(int128,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xede8c03a5c9980e69b44efc8cd574b02d310107dec1d56221538387d0a985dd3": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "checkpoint()",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "checkpoint()",
+      "useAdaptor": true
+    }
+  ],
+  "0x969de596bf58f88a225b6869578bc463caeca0ea01e85acf16d9ec1a86828149": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "checkpoint_gauge(address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "checkpoint_gauge(address)",
+      "useAdaptor": true
+    }
+  ],
+  "0x84ec76e36f7241cba4cb620e6bfcc841b9e4ef2bcd0e485a642595508d6bcd84": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "gauge_relative_weight_write(address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "gauge_relative_weight_write(address)",
+      "useAdaptor": true
+    }
+  ],
+  "0xa87de8fc8b2b49aca493acb773410b300a0626eb4347fdd23b251f897cc38966": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "gauge_relative_weight_write(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "gauge_relative_weight_write(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x31c6aa14f24b415ef63318143211001c10d5e4821e699ba467c36d0df88e10ec": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "vote_for_gauge_weights(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "vote_for_gauge_weights(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x14da05a7e189630b58c6fab755f8cc0a7cee1bc9fe56583f6756dfb622f824ae": [
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "vote_for_many_gauge_weights(address[8],uint256[8])",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "vote_for_many_gauge_weights(address[8],uint256[8])",
+      "useAdaptor": true
+    }
   ]
 }

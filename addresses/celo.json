@@ -70,6 +70,28 @@
     ],
     "status": "ACTIVE"
   },
+  "20230316-l2-balancer-pseudo-minter": {
+    "contracts": [
+      {
+        "name": "L2BalancerPseudoMinter",
+        "address": "0x28D89a683515409D382cc8C5dda113FAcA594423"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20230316-l2-ve-delegation-proxy": {
+    "contracts": [
+      {
+        "name": "NullVotingEscrow",
+        "address": "0x7Fa5025707b48fe99260fa62e21930F141857419"
+      },
+      {
+        "name": "VotingEscrowDelegationProxy",
+        "address": "0x7AFEF783D39032a76C87D76534CA874F2b2C0741"
+      }
+    ],
+    "status": "ACTIVE"
+  },
   "20230320-weighted-pool-v4": {
     "contracts": [
       {
@@ -139,5 +161,36 @@
       }
     ],
     "status": "SCRIPT"
+  },
+  "20241125-regenerative-voting-escrow": {
+    "contracts": [
+      {
+        "name": "VotingEscrow",
+        "address": "0x05B87e716393F76b5854b4c194b90C26c24Cd90D"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-test-regenerative-gauge-controller": {
+    "contracts": [
+      {
+        "name": "GaugeController",
+        "address": "0xaa6D84773d993d3d09490a96e244C71592D6b6f1"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20250128-no-token-admin-gauge-factory": {
+    "contracts": [
+      {
+        "name": "NoTokenAdminGauge",
+        "address": "0xe16620475F27Fa4cd445a04fb7982d607895bF52"
+      },
+      {
+        "name": "NoTokenAdminGaugeFactory",
+        "address": "0x2a150f61074ccb7a4Ef90Bd27534151c37Ba4D45"
+      }
+    ],
+    "status": "ACTIVE"
   }
 }

@@ -256,5 +256,33 @@
         "toggle_approve_mint(address)": "0x247474e9f94fb138bd0a2792972ffffd2ce4adc13861e0632144afc44220bf5b"
       }
     }
+  },
+  "20230316-l2-ve-delegation-proxy": {
+    "VotingEscrowDelegationProxy": {
+      "useAdaptor": false,
+      "actionIds": {
+        "killDelegation()": "0xdb2ed3b073f03218fb51d4599f715869d11d82e793acd21802828370f300aa8b",
+        "setDelegation(address)": "0xf3eef5df53ea29d1e5d967b0ea04168235b3428534e2f84154cc568f9d120bbb"
+      }
+    }
+  },
+  "20241209-test-regenerative-gauge-controller": {
+    "TestGaugeController": {
+      "useAdaptor": true,
+      "actionIds": {
+        "add_gauge(address,int128)": "0x473f5e8c6e55363720cf6f7fcd979a32d792ba6cdd9b26089a07e27172b7117d",
+        "add_gauge(address,int128,uint256)": "0x2cc706d94202bc96bae2c4e7a7275423580be8794d474a228099c570d9f99c0a",
+        "add_type(string)": "0xe4a438bf04c315d293789a541d5d4e1394d61c34d7147d63f861735832179f1a",
+        "add_type(string,uint256)": "0x035276ba41d315e3364d36695193fef3cd6e92b1e8b0f59884fd25476b219a43",
+        "change_gauge_weight(address,uint256)": "0x851dac3b06e5499bf021dc53b0d86a7c621315f9172f1979d786dba7361b85e4",
+        "change_type_weight(int128,uint256)": "0x6a58444e44c6968ad60fd04f2675068d0632ef1d96fddc327ac1b05a31b92b85",
+        "checkpoint()": "0xede8c03a5c9980e69b44efc8cd574b02d310107dec1d56221538387d0a985dd3",
+        "checkpoint_gauge(address)": "0x969de596bf58f88a225b6869578bc463caeca0ea01e85acf16d9ec1a86828149",
+        "gauge_relative_weight_write(address)": "0x84ec76e36f7241cba4cb620e6bfcc841b9e4ef2bcd0e485a642595508d6bcd84",
+        "gauge_relative_weight_write(address,uint256)": "0xa87de8fc8b2b49aca493acb773410b300a0626eb4347fdd23b251f897cc38966",
+        "vote_for_gauge_weights(address,uint256)": "0x31c6aa14f24b415ef63318143211001c10d5e4821e699ba467c36d0df88e10ec",
+        "vote_for_many_gauge_weights(address[8],uint256[8])": "0x14da05a7e189630b58c6fab755f8cc0a7cee1bc9fe56583f6756dfb622f824ae"
+      }
+    }
   }
 }

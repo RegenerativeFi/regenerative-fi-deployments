@@ -126,5 +126,42 @@
         "vaultActionsQueryMulticall(bytes[])": "0x364d166e967b6eb12dfc2e4931d78e37f416e5ae8694d47dba3d6b517fa8ff0e"
       }
     }
+  },
+  "20230316-l2-balancer-pseudo-minter": {
+    "L2BalancerPseudoMinter": {
+      "useAdaptor": false,
+      "actionIds": {
+        "addGaugeFactory(address)": "0xbe5a12df15b2055cd4c04cfb154b2fe52a494bc6ebb2c3f831d660174ae5bab4",
+        "mint(address)": "0x27b8044f437d58aa7546ac17ca980dd3a4c954da2c95b81fc8810b9a320ecaac",
+        "mintFor(address,address)": "0xa3b5abb43c8415c0e3068d68d6a5e7e1080c0368c2ea5270aad19549bb498dc3",
+        "mintMany(address[])": "0x0605dcc34e5ea8901fde642116736c1d601de0a725a7c06080428b5265647ea9",
+        "mintManyFor(address[],address)": "0x7ed56058e3dac1aac5b90e61fb8b9acc07ecbd09980835f7cd006b77726ce17c",
+        "mint_for(address,address)": "0xfffc02e2cde0163b26364786bef090d15bf818e82cd2ab7460760be4893acb3d",
+        "mint_many(address[8])": "0xccd6a4a94ac4c1b6b8ceb5a113f8bf826af0cd39168cfa89ed56eb3e8cce1c3a",
+        "removeGaugeFactory(address)": "0x682d8dd1a5e7bcbc9b767b5232abff9e71a4f7c250a0ec81bcda0b883456306c",
+        "setMinterApproval(address,bool)": "0x7caddc07f044d0aaff03b63a46eda4e6c4aeddfbc193fb976e3f990344f635d3",
+        "setMinterApprovalWithSignature(address,bool,address,uint256,uint8,bytes32,bytes32)": "0x1bc0ab855c3b46c30703a19b9208131713c92c0d5eea871a558c03d9f8791f83",
+        "toggle_approve_mint(address)": "0x4b33b6992e59739fd1dc5eb0ad9e7e55ae045e558d2046b541ade6ee3c1638ee"
+      }
+    }
+  },
+  "20241209-test-regenerative-gauge-controller": {
+    "TestGaugeController": {
+      "useAdaptor": true,
+      "actionIds": {
+        "add_gauge(address,int128)": "0x65c96fdc1ff12d506b1544df3af1d8f18db13212ca61bfc24421a3239c543f96",
+        "add_gauge(address,int128,uint256)": "0xbc624e6740a40d24084bd3a634dd92219519c86409d4854c78723b9bd8e7ca66",
+        "add_type(string)": "0xbb9d8b9c0c67fed81ec158690c5db58ccdc26514ee891d35c186d16f387c20d9",
+        "add_type(string,uint256)": "0x73d89d5f2f6b12c5dc61b8268ce0674836b7c6811342f6227108894420bd4cae",
+        "change_gauge_weight(address,uint256)": "0x0a006a786326c0b5e85b39a7392d8adcabd8a733ac2b64ebcaa6d20ea9c93242",
+        "change_type_weight(int128,uint256)": "0xbb40b0f102fe7c5ecf8c633060ef2cf62a29967e9c492b4043ebe53fa923f5d5",
+        "checkpoint()": "0xce261ab9abc4f088cc5f805b22ac81b15e5c539f7a6a4abaac2fd35eefe12ec8",
+        "checkpoint_gauge(address)": "0x6f25f5e77e28fe6fbdf7875e222fe5f47b0e2e5d2e3bc104289a40e0868a60c5",
+        "gauge_relative_weight_write(address)": "0xc2f86097b1a7d53aa2d076d134e4523352abd3221201911cf2384c1803141e63",
+        "gauge_relative_weight_write(address,uint256)": "0xea2c7d8e28065ce5ebd06a85e2fde44c2bd9e52747c11a76fc75bf2e11fba586",
+        "vote_for_gauge_weights(address,uint256)": "0xe9b8cf07bae91376548ee6e4f89917c3a5c5a309057d5a629616fc9d632ead82",
+        "vote_for_many_gauge_weights(address[8],uint256[8])": "0x9d41431b0aad567393c9fad84752955176d65cbf2bfb350550813808af8420c7"
+      }
+    }
   }
 }
