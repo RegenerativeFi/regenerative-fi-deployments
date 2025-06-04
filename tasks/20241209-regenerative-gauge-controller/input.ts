@@ -2,7 +2,6 @@ import { Task, TaskMode } from '@src';
 
 export type GaugeSystemDeployment = {
   VotingEscrow: string;
-  TokenAdmin: string;
   AuthorizerAdaptor: string;
 };
 
@@ -12,7 +11,4 @@ const VotingEscrow = new Task('20241125-regenerative-voting-escrow', TaskMode.RE
 export default {
   AuthorizerAdaptor,
   VotingEscrow,
-  celoAlfajores: {
-    TokenAdmin: '0x63CBAea259d07Dd82040D4c5AFA09F3aC9969931',
-  },
 };

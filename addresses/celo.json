@@ -74,7 +74,7 @@
     "contracts": [
       {
         "name": "L2BalancerPseudoMinter",
-        "address": "0x28D89a683515409D382cc8C5dda113FAcA594423"
+        "address": "0xd97f3b927c8eE02eae5F48eA27a4A126fE214b59"
       }
     ],
     "status": "ACTIVE"
@@ -82,12 +82,8 @@
   "20230316-l2-ve-delegation-proxy": {
     "contracts": [
       {
-        "name": "NullVotingEscrow",
-        "address": "0x7Fa5025707b48fe99260fa62e21930F141857419"
-      },
-      {
         "name": "VotingEscrowDelegationProxy",
-        "address": "0x7AFEF783D39032a76C87D76534CA874F2b2C0741"
+        "address": "0x25DbBC8e113E7993724e6734c07eDB77e24b7dd3"
       }
     ],
     "status": "ACTIVE"
@@ -156,8 +152,16 @@
   "20241125-regenerative-test-tokens": {
     "contracts": [
       {
-        "name": "TestBalancerToken",
-        "address": "0x68DF333c5F5835A186AA8bCe4a704432006fDF49"
+        "name": "tCELO",
+        "address": "0xD1531Aa8F91f5Fd8D5D820CD5841e3880283D1Be"
+      },
+      {
+        "name": "tcUSD",
+        "address": "0xB08Dd0b53abD8fB842cDec75cc5064FDD74e99C7"
+      },
+      {
+        "name": "tUSDC",
+        "address": "0x76C12F93ad8975609f95C13782fd8A0B4135e4c6"
       }
     ],
     "status": "SCRIPT"
@@ -166,7 +170,37 @@
     "contracts": [
       {
         "name": "VotingEscrow",
-        "address": "0x05B87e716393F76b5854b4c194b90C26c24Cd90D"
+        "address": "0x7b96a7CD4084fd34134A0ED731457f1A14e300a1"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-bribe-market": {
+    "contracts": [
+      {
+        "name": "RewardDistributor",
+        "address": "0x2874321070A9B6a9c81827BcA9Dd4F9EcD0631b8"
+      },
+      {
+        "name": "BribeVault",
+        "address": "0xEBC4Bb8727FEa1f81a007E877A6e0b874a285255"
+      },
+      {
+        "name": "BribeMarket",
+        "address": "0x550302426149B7c27F8915341E593E06acC4b20E"
+      },
+      {
+        "name": "BribeFactory",
+        "address": "0x63CBAea259d07Dd82040D4c5AFA09F3aC9969931"
+      }
+    ],
+    "status": "ACTIVE"
+  },
+  "20241209-regenerative-gauge-controller": {
+    "contracts": [
+      {
+        "name": "GaugeController",
+        "address": "0xA74EeaBbD9477fF996e8FDa44dc979524C4b4e41"
       }
     ],
     "status": "ACTIVE"
@@ -174,8 +208,12 @@
   "20241209-test-regenerative-gauge-controller": {
     "contracts": [
       {
-        "name": "GaugeController",
+        "name": "OldTestGaugeController",
         "address": "0xaa6D84773d993d3d09490a96e244C71592D6b6f1"
+      },
+      {
+        "name": "TestGaugeController",
+        "address": "0x3b7A489b19915d6b6724712073CE7559b711Ed58"
       }
     ],
     "status": "ACTIVE"
@@ -184,11 +222,11 @@
     "contracts": [
       {
         "name": "NoTokenAdminGauge",
-        "address": "0xe16620475F27Fa4cd445a04fb7982d607895bF52"
+        "address": "0x9B56e309c1fCDE05Ff1390Cec808B53Fa59b3b59"
       },
       {
         "name": "NoTokenAdminGaugeFactory",
-        "address": "0x2a150f61074ccb7a4Ef90Bd27534151c37Ba4D45"
+        "address": "0xbe3A536940D5e629F257B5758347f2D47b07362c"
       }
     ],
     "status": "ACTIVE"

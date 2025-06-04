@@ -269,16 +269,8 @@
   "20241209-test-regenerative-gauge-controller": {
     "contracts": [
       {
-        "name": "GaugeController",
-        "address": "0x0B58399530a0664C0B1ad7e7d290fFAC854930f8"
-      },
-      {
         "name": "TestGaugeController",
         "address": "0x6cd1dcf9f20a484d487665a6d06f6ee5de6db16e"
-      },
-      {
-        "name": "BalancerMinter",
-        "address": "0x03A9C0cd9722Faa98Db73f944be2dD6B2C230f80"
       }
     ],
     "status": "ACTIVE"

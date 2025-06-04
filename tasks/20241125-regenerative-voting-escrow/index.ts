@@ -5,7 +5,7 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
   const input = task.input() as VotingEscrowDeployment;
 
   const veREFIArgs = [
-    input.TestBalancerToken,
+    input.Token,
     input.Symbol,
     input.Name,
     input.AuthorizerAdaptor,
