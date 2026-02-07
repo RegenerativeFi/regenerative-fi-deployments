@@ -13,4 +13,7 @@ export default {
   celoAlfajores: {
     GaugeController,
   },
+  celo: {
+    GaugeController,
+  },
 };

@@ -96,5 +96,179 @@
       "signature": "swap((bytes32,uint8,address,address,uint256,bytes),(address,bool,address,bool),uint256,uint256,uint256,uint256)",
       "useAdaptor": true
     }
+  ],
+  "0x65c96fdc1ff12d506b1544df3af1d8f18db13212ca61bfc24421a3239c543f96": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_gauge(address,int128)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_gauge(address,int128)",
+      "useAdaptor": true
+    }
+  ],
+  "0xbc624e6740a40d24084bd3a634dd92219519c86409d4854c78723b9bd8e7ca66": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_gauge(address,int128,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_gauge(address,int128,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xbb9d8b9c0c67fed81ec158690c5db58ccdc26514ee891d35c186d16f387c20d9": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_type(string)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_type(string)",
+      "useAdaptor": true
+    }
+  ],
+  "0x73d89d5f2f6b12c5dc61b8268ce0674836b7c6811342f6227108894420bd4cae": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "add_type(string,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "add_type(string,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x0a006a786326c0b5e85b39a7392d8adcabd8a733ac2b64ebcaa6d20ea9c93242": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "change_gauge_weight(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "change_gauge_weight(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xbb40b0f102fe7c5ecf8c633060ef2cf62a29967e9c492b4043ebe53fa923f5d5": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "change_type_weight(int128,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "change_type_weight(int128,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xce261ab9abc4f088cc5f805b22ac81b15e5c539f7a6a4abaac2fd35eefe12ec8": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "checkpoint()",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "checkpoint()",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241125-regenerative-voting-escrow",
+      "contractName": "VotingEscrow",
+      "signature": "checkpoint()",
+      "useAdaptor": true
+    }
+  ],
+  "0x6f25f5e77e28fe6fbdf7875e222fe5f47b0e2e5d2e3bc104289a40e0868a60c5": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "checkpoint_gauge(address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "checkpoint_gauge(address)",
+      "useAdaptor": true
+    }
+  ],
+  "0xc2f86097b1a7d53aa2d076d134e4523352abd3221201911cf2384c1803141e63": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "gauge_relative_weight_write(address)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "gauge_relative_weight_write(address)",
+      "useAdaptor": true
+    }
+  ],
+  "0xea2c7d8e28065ce5ebd06a85e2fde44c2bd9e52747c11a76fc75bf2e11fba586": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "gauge_relative_weight_write(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "gauge_relative_weight_write(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0xe9b8cf07bae91376548ee6e4f89917c3a5c5a309057d5a629616fc9d632ead82": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "vote_for_gauge_weights(address,uint256)",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "vote_for_gauge_weights(address,uint256)",
+      "useAdaptor": true
+    }
+  ],
+  "0x9d41431b0aad567393c9fad84752955176d65cbf2bfb350550813808af8420c7": [
+    {
+      "taskId": "20241209-test-regenerative-gauge-controller",
+      "contractName": "TestGaugeController",
+      "signature": "vote_for_many_gauge_weights(address[8],uint256[8])",
+      "useAdaptor": true
+    },
+    {
+      "taskId": "20241209-regenerative-gauge-controller",
+      "contractName": "GaugeController",
+      "signature": "vote_for_many_gauge_weights(address[8],uint256[8])",
+      "useAdaptor": true
+    }
   ]
 }

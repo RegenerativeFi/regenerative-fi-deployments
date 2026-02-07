@@ -6,8 +6,8 @@ export default async (task: Task, { force, from }: TaskRunOptions = {}): Promise
 
   const veREFIArgs = [
     input.Token,
-    input.Symbol,
     input.Name,
+    input.Symbol,
     input.AuthorizerAdaptor,
     input.AuthorizerAdaptor,
     input.AuthorizerAdaptor,
